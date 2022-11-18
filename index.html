@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaraibShaikh_Assignment 17</title>
+</head>
+<body>
+    <h1>JavaScript - Assignment 17</h1>
+    <h2>By Laraib Shaikh</h2>
+    <h3>CIRCLE TechKaro - Web Development Evening slot</h3>
+
+    <script>
+        /* Task 01: Write a program using a for loop and print the numbers from 200 till 0 with the decrement of  3. */
+        //Solution:
+        console.log("Task 01")
+        for(let i = 200; i>=0; i-=3){
+            console.log(i);
+        }
+
+
+        console.log("===========================")
+        console.log("Task 02")
+        /* Task 02: Write  a  program to  display your name 10 times using a while loop. */
+        //Solution:
+        
+        let a = 1;
+        while(a <= 10){
+            a++;
+            console.log("Laraib Shaikh")
+        }
+        
+
+        console.log("===========================")
+        console.log("Task 03")
+        /* Task 03: Write a program to  print a sum of even numbers in between 1-10  using a while loop. */
+        //Solution:
+        
+        let sumEven = 0;
+        let i = 1;
+        while(i <= 10){
+            if(i%2 == 0){
+                sumEven += i;
+                if(sumEven == 30)
+                {
+                    console.log("Sum of Even numbers between 1 to 10 is: " + sumEven);
+                }
+            }
+            i++;
+        }
+        
+        
+        console.log("===========================")
+        console.log("Task 04")
+        /* Task 04: Write a  program to display a number between 1 to 5 using the do while loop. */
+        //Solution:
+        
+        let b = 1;
+        do {
+            b++;
+            if(b != 5)
+                console.log(b);
+        }
+        while (b < 5);
+        
+
+        console.log("===========================")
+        console.log("Task 05")
+        /* Task 05: Write  a function to print the sum of two numbers. */
+        //Solution:
+        
+        function SUM(num1, num2){
+            let result = num1 + num2;
+            return result;
+        }
+        console.log("The sum of two numbers is: " + SUM(67,83));
+        
+
+        console.log("===========================")
+        console.log("Task 06")
+        /* Task 06: Invoke a  function and pass values to the ‘width’  & ‘height’  parameters inside the    
+            parenthesis store the return value in a variable ‘Area’  and print it in the console.
+         */
+        //Solution:
+        
+        function area(width, height){
+            return(Area = 0.5 * width * height);
+        }
+        console.log("The area of triangle is: " + area(9,6));
+        
+    </script>
+</body>
+</html>
